@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Reflections</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="shortcut icon" href="assets/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="buy_page.css">
+</head>
+
+
+<body>
+
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href=""><img height="50px" src="assets/logo/finalll.png" alt=""></a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><label class="hamburger">
+                            <input type="checkbox" />
+                            <svg viewBox="0 0 32 32">
+                                <path
+                                    d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+                                    class="line line-top-bottom"></path>
+                                <path d="M7 16 27 16" class="line"></path>
+                            </svg>
+                        </label>
+                    </span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav-links navbar-nav ms-auto">
+                        <li class="nav-item"><a target="_blank" class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#Categories">Categories</a></li>
+                        <li class="nav-item"><a target="_blank" class="nav-link" href="about-us.html">About
+                                Us</a></li>
+                        <li class="nav-item"><a target="_blank" class="nav-link" href="contact-us.html">Contact
+                                Us</a></li>
+                        <div class="nav-hover-bg"></div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="buypageCont ">
+        <!-- Back Button -->
+        <div class="row mb-4 back-btn">
+            <div class="col-12">
+                <a href="decorative.html" class="text-decoration-none">
+                    <i class="bi bi-arrow-left"></i> Back to catalog
+                </a>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Column 1: Product Image -->
+            <div class="col-lg-4">
+                <div class="product-image-container text-center">
+                    <img id="mirrorImage" src="" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <!-- Column 2: Product Details -->
+            <div class="col-lg-4">
+                <div class="product-details p-3 h-100">
+                    <h1 id="mirrorName" class="mb-3"></h1>
+                    <div class="product-description mb-4">
+                        <p id="mirrorDesc" class="lead"></p>
+                    </div>
+                    <div class="price-section mb-4">
+                        <span class="h3 sale-price">$<span id="currentPrice">299</span></span>
+                        <span class="original-price"><del>$<span id="originalPrice">399</span></del></span>
+                        <span class="sale-badge">SAVE $<span id="savingsAmount">100</span></span>
+                    </div>
+                    <div class="stock-info mb-4 p-2 bg-light rounded">
+                        <span class="text-success">
+                            <i class="bi bi-check-circle"></i> In stock: <span id="stockCount">8</span> available
+                        </span>
+                    </div>
+                    <div class="social-sharing mt-4 pt-3 border-top">
+                        <p class="small mb-2">Share this product:</p>
+                        <div class="d-flex gap-3">
+                            <a target="_blank" href="https://www.facebook.com/login.php/"><i
+                                    class="bi bi-facebook"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://x.com/?lang=en"><i class="bi bi-twitter"></i></a>
+                            <a target="_blank" href="https://www.pinterest.com/"><i class="bi bi-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 3: Order Form -->
+            <div class="col-lg-4">
+                <div class="order-form-container p-4 rounded-3 h-100">
+                    <h3 class="mb-4">Order Details</h3>
+                    <form class="order-form">
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">Quantity</label>
+                            <select class="form-select" id="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 bg-white p-2 rounded">
+                            <div class="d-flex justify-content-between">
+                                <span>Total:</span>
+                                <span class="fw-bold">$<span id="totalPrice">299</span></span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Shipping Address</label>
+                            <textarea class="form-control" id="address" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 py-2 mt-2">
+                            <i class="bi bi-bag-check me-2"></i> Complete Purchase
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // cards array will be placed here 
+        const products = [
+    {
+        id: 1,
+        name: "Aura Decorative Mirror",
+        description: "A decorative mirror with a vintage touch.",
+        price: 229,
+        salePrice: 189,
+        image: "assets/mirrors/Decorative Mirror/01.png",
+        stock: 10
+    },
+    {
+        id: 2,
+        name: "Artistic Edge",
+        description: "A uniquely shaped decorative mirror for a bold statement.",
+        price: 259,
+        salePrice: 219,
+        image: "assets/mirrors/Decorative Mirror/02.png",
+        stock: 7
+    },
+    {
+        id: 3,
+        name: "Modern Chic",
+        description: "A stylish decorative mirror that complements modern decor.",
+        price: 239,
+        salePrice: 199,
+        image: "assets/mirrors/Decorative Mirror/03.png",
+        stock: 12
+    },
+    {
+        id: 4,
+        name: "Elegant Finish",
+        description: "A decorative mirror with an elegant finish.",
+        price: 249,
+        salePrice: 209,
+        image: "assets/mirrors/Decorative Mirror/04.png",
+        stock: 8
+    },
+    {
+        id: 5,
+        name: "Sleek Design",
+        description: "A slim and stylish decorative mirror.",
+        price: 219,
+        salePrice: 179,
+        image: "assets/mirrors/Decorative Mirror/05.png",
+        stock: 15
+    },
+    {
+        id: 6,
+        name: "Royal Grandeur",
+        description: "An ornate decorative mirror with a luxurious touch.",
+        price: 279,
+        salePrice: 239,
+        image: "assets/mirrors/Decorative Mirror/06.png",
+        stock: 5
+    },
+    {
+        id: 7,
+        name: "Modern Minimal",
+        description: "A sleek and modern decorative mirror with a minimalist design.",
+        price: 209,
+        salePrice: 169,
+        image: "assets/mirrors/Decorative Mirror/07.png",
+        stock: 9
+    },
+    {
+        id: 8,
+        name: "Elegant Reflection",
+        description: "A beautiful decorative mirror with an elegant design.",
+        price: 269,
+        salePrice: 229,
+        image: "assets/mirrors/Decorative Mirror/08.png",
+        stock: 6
+    }
+];
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = parseInt(urlParams.get('product')) || 1;
+            const product = products.find(p => p.id === productId) || products[0];
+
+            // Update product info
+            document.getElementById('mirrorName').textContent = product.name;
+            document.getElementById('mirrorDesc').textContent = product.description;
+            document.getElementById('mirrorImage').src = product.image;
+            document.getElementById('mirrorImage').alt = product.name;
+            document.getElementById('currentPrice').textContent = product.salePrice;
+            document.getElementById('originalPrice').textContent = product.price;
+            document.getElementById('savingsAmount').textContent = product.price - product.salePrice;
+            document.getElementById('stockCount').textContent = product.stock;
+
+            // Price calculation
+            const quantitySelect = document.getElementById('quantity');
+            const totalPriceElement = document.getElementById('totalPrice');
+
+            function updateTotalPrice() {
+                const quantity = parseInt(quantitySelect.value);
+                totalPriceElement.textContent = product.salePrice * quantity;
+            }
+
+            quantitySelect.addEventListener('change', updateTotalPrice);
+            updateTotalPrice();
+        });
+    </script>
+    <!-- Enhanced Footer -->
+    <footer class="luxury-footer">
+        <div class="footer-container">
+            <!-- Logo and Description -->
+            <div class="footer-logo-section">
+                <div class="footer-logo">
+                    <img src="assets/logo/finalll.png" alt="Clear Reflections">
+                </div>
+                <div class="footer-tagline">Luxury in Every Reflection</div>
+                <div class="footer-social">
+                    <a target="_blank" href="https://www.facebook.com/login.php/"><i class="bi bi-facebook"></i> </a>
+                    <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i> </a>
+                    <a target="_blank" href="https://x.com/?lang=en"><i class="bi bi-twitter"></i> </a>
+                    <a target="_blank" href="https://www.pinterest.com/"><i class="bi bi-pinterest"></i> </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#Categories">Mirror Collections</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Categories
+            <div class="footer-column">
+                <h4>Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#Categories">Bathroom Mirrors</a></li>
+                    <li><a href="#Categories">Decorative Mirrors</a></li>
+                    <li><a href="#Categories">Smart LED Mirrors</a></li>
+                    <li><a href="#Categories">Wooden Framed Mirrors</a></li>
+                </ul>
+            </div> -->
+
+            <!-- Newsletter -->
+            <div class="footer-column">
+                <h4>Stay Connected</h4>
+                <p>Subscribe to receive updates on our latest collections and exclusive offers.</p>
+                <div class="footer-newsletter">
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+                        <button type="submit" class="newsletter-btn">
+                            <i class="bi bi-send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Clear Reflections. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

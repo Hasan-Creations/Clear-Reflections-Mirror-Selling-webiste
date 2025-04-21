@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Reflections</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="shortcut icon" href="assets/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href=""><img height="50px" src="assets/logo/finalll.png" alt=""></a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><label class="hamburger">
+                            <input type="checkbox" />
+                            <svg viewBox="0 0 32 32">
+                                <path
+                                    d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+                                    class="line line-top-bottom"></path>
+                                <path d="M7 16 27 16" class="line"></path>
+                            </svg>
+                        </label>
+                    </span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav-links navbar-nav ms-auto">
+                        <li class="nav-item"><a target="_blank" class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#Categories">Categories</a></li>
+                        <li class="nav-item"><a target="_blank" class="nav-link" href="about-us.html">About
+                                Us</a></li>
+                        <li class="nav-item"><a target="_blank" class="nav-link" href="contact-us.html">Contact
+                                Us</a></li>
+                        <div class="nav-hover-bg"></div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1><span>Where luxury meets</span> <span>Reflection</span></h1>
+    </section>
+    <button id="backToTop" onclick="scrollToTop()">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Mirror Categories Filter Section -->
+    <section id="Categories" class="mirror-filters ">
+        <h2>Explore <span> Mirror Styles</span></h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="featured">Featured</button>
+            <button class="filter-btn" data-category="drawing-room"
+                onclick="window.open('drawing-room.html', '_blank')">Drawing Room</button>
+            <button class="filter-btn" data-category="bathroom"
+                onclick="window.open('bathroom.html', '_blank')">Bathroom</button>
+            <button class="filter-btn" data-category="bedroom"
+                onclick="window.open('bedroom.html', '_blank')">Bedroom</button>
+            <button class="filter-btn" data-category="dressing"
+                onclick="window.open('dressing.html', '_blank')">Dressing</button>
+            <button class="filter-btn" data-category="hallway"
+                onclick="window.open('hallway.html', '_blank')">Hallway</button>
+            <button class="filter-btn" data-category="wooden"
+                onclick="window.open('wooden.html', '_blank')">Wooden</button>
+            <button class="filter-btn" data-category="acrylic"
+                onclick="window.open('acrylic.html', '_blank')">Acrylic</button>
+            <button class="filter-btn" data-category="metal"
+                onclick="window.open('metal.html', '_blank')">Metal</button>
+            <button class="filter-btn" data-category="decorative"
+                onclick="window.open('decorative.html', '_blank')">Decorative</button>
+            <button class="filter-btn" data-category="smart LED mirror"
+                onclick="window.open('smart-LED.html', '_blank')">Smart LED</button>
+            <button class="filter-btn" data-category="frameless" 
+                onclick="window.open('frameless.html', '_blank')">Frameless</button>
+            <button class="filter-btn" data-category="antique"
+                onclick="window.open('antique.html', '_blank')">Antique</button>
+        </div>
+    </section>
+
+
+
+    <section class="mirror-gallery  py-4">
+        <div class="container pt-3">
+            <div class="row" id="mirrorContainer">
+                <!-- Featured would be first if you have specific featured items -->
+                <!-- Otherwise starting with Drawing Room as per your filter order -->
+
+                <div class="card col-md-3 mb-4 mirror-item">
+                    <img src="assets/mirrors/Drawing Room Mirror/01.png" class="card-img-top"
+                        alt="Drawing Room Mirror">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Drawing Room Mirror</h6>
+                        <p class="card-text">Sophisticated mirrors to enhance your formal living space</p>
+                        <button class="btn btn-primary see-more-btn"
+                            onclick="window.open('drawing-room.html', '_blank')">See More</button>
+                    </div>
+                </div>
+
+                <div class="card col-md-3 mb-4 mirror-item">
+                    <img src="assets/mirrors/Bathroom Mirror/01.png" class="card-img-top" alt="Bathroom Mirror">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Bathroom Mirror</h6>
+                        <p class="card-text">Functional and stylish mirrors designed for bathroom spaces</p>
+                        <button class="btn btn-primary see-more-btn"
+                            onclick="window.open('bathroom.html', '_blank')">See More</button>
+                    </div>
+                </div>
+
+                <div class="card col-md-3 mb-4 mirror-item">
+                    <img src="assets/mirrors/Bedroom Mirror/01.png" class="card-img-top" alt="Bedroom Mirror">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Bedroom Mirror</h6>
+                        <p class="card-text">Elegant mirrors to complement your bedroom decor</p>
+                        <button class="btn btn-primary see-more-btn"
+                            onclick="window.open('bedroom.html', '_blank')">See More</button>
+                    </div>
+                </div>
+
+                <div class="card col-md-3 mb-4 mirror-item">
+                    <img src="assets/mirrors/Dressing Mirror/01.png" class="card-img-top" alt="Dressing Mirror">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Dressing Mirror</h6>
+                        <p class="card-text">Full-length mirrors ideal for dressing areas and bedrooms</p>
+                        <button class="btn btn-primary see-more-btn"
+                            onclick="window.open('dressing.html', '_blank')">See More</button>
+                    </div>
+                </div>
+
+                <div class="card col-md-3 mb-4 mirror-item">
+                    <img src="assets/mirrors/Hallway Mirror/01.png" class="card-img-top" alt="Hallway Mirror">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Hallway Mirror</h6>
+                        <p class="card-text">Space-enhancing mirrors perfect for narrow hallways and entries</p>
+                        <button class="btn btn-primary see-more-btn"
+                            onclick="window.open('hallway.html', '_blank')">See More</button>
+                    </div>
+                </div>
+
+                <div class="card col-md-3 mb-4 mirror-item">
+                    <img src="assets/mirrors/Wooden Mirror/01.png" class="card-img-top" alt="Wooden Mirror">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Wooden Mirror</h6>
+                        <p class="card-text">Warm, natural mirrors with beautiful wooden frames</p>
+                        <button class="btn btn-primary see-more-btn"
+                            onclick="window.open('wooden.html', '_blank')">See More</button>
+                    </div>
+                </div>
+
+                <div class="card col-md-3 mb-4 mirror-item">
+                    <img src="assets/mirrors/Acrylic Mirror/01.png" class="card-img-top" alt="Acrylic Mirror">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Acrylic Mirror</h6>
+                        <p class="card-text">Lightweight and shatter-resistant acrylic mirrors perfect for modern spaces
+                        </p>
+                        <button class="btn btn-primary see-more-btn"
+                            onclick="window.open('acrylic.html', '_blank')">See More</button>
+                    </div>
+                </div>
+
+                <div class="card col-md-3 mb-4 mirror-item">
+                    <img src="assets/mirrors/Metal Mirror/01.png" class="card-img-top" alt="Metal Mirror">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Metal Mirror</h6>
+                        <p class="card-text">Durable mirrors with stylish metal frames for industrial chic</p>
+                        <button class="btn btn-primary see-more-btn"
+                            onclick="window.open('metal.html', '_blank')">See More</button>
+                    </div>
+                </div>
+
+                <div class="card col-md-3 mb-4 mirror-item">
+                    <img src="assets/mirrors/Decorative Mirror/01.png" class="card-img-top" alt="Decorative Mirror">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Decorative Mirror</h6>
+                        <p class="card-text">Artistic mirrors that serve as statement pieces in any room</p>
+                        <button class="btn btn-primary see-more-btn"
+                            onclick="window.open('decorative.html', '_blank')">See More</button>
+                    </div>
+                </div>
+
+                <div class="card col-md-3 mb-4 mirror-item">
+                    <img src="assets/mirrors/Smart LED MIrror/01.png" class="card-img-top" alt="Smart LED Mirror">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Smart LED Mirror</h6>
+                        <p class="card-text">High-tech mirrors with integrated lighting and smart features</p>
+                        <button class="btn btn-primary see-more-btn"
+                            onclick="window.open('smart-LED.html', '_blank')">See More</button>
+                    </div>
+                </div>
+
+                <div class="card col-md-3 mb-4 mirror-item">
+                    <img src="assets/mirrors/Frameless Mirror/01.png" class="card-img-top" alt="Frameless Mirror">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Frameless Mirror</h6>
+                        <p class="card-text">Sleek, minimalist mirrors for a clean contemporary look</p>
+                        <button class="btn btn-primary see-more-btn"
+                            onclick="window.open('frameless.html', '_blank')">See More</button>
+                    </div>
+                </div>
+
+                <div class="card col-md-3 mb-4 mirror-item">
+                    <img src="assets/mirrors/Antique Mirror/01.png" class="card-img-top" alt="Antique Mirror">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Antique Mirror</h6>
+                        <p class="card-text">Vintage-style mirrors with distressed finishes for classic elegance</p>
+                        <button class="btn btn-primary see-more-btn"
+                            onclick="window.open('antique.html', '_blank')">See More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Enhanced Footer -->
+    <footer class="luxury-footer">
+        <div class="footer-container">
+            <!-- Logo and Description -->
+            <div class="footer-logo-section"> 
+                <div class="footer-logo">
+                    <img src="assets/logo/finalll.png" alt="Clear Reflections">
+                </div>
+                <div class="footer-tagline">Luxury in Every Reflection</div>
+                <div class="footer-social">
+                    <a target="_blank" href="https://www.facebook.com/login.php/"><i class="bi bi-facebook"></i> </a>
+                    <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i> </a>
+                    <a target="_blank" href="https://x.com/?lang=en"><i class="bi bi-twitter"></i> </a>
+                    <a target="_blank" href="https://www.pinterest.com/"><i class="bi bi-pinterest"></i> </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html#Categories">Mirror Collections</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Categories
+            <div class="footer-column">
+                <h4>Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#Categories">Bathroom Mirrors</a></li>
+                    <li><a href="#Categories">Decorative Mirrors</a></li>
+                    <li><a href="#Categories">Smart LED Mirrors</a></li>
+                    <li><a href="#Categories">Wooden Framed Mirrors</a></li>
+                </ul>
+            </div> -->
+
+            <!-- Newsletter -->
+            <div class="footer-column">
+                <h4>Stay Connected</h4>
+                <p>Subscribe to receive updates on our latest collections and exclusive offers.</p>
+                <div class="footer-newsletter">
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+                        <button type="submit" class="newsletter-btn">
+                            <i class="bi bi-send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Clear Reflections. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
